@@ -1,0 +1,21 @@
+
+header.header
+    .container
+        .header__wrapper
+            img.header__logo(src="img/logo.svg")
+            .header__burger.burger(tabindex="0")
+                .burger__line
+                .burger__line
+                .burger__line
+                .burger__line
+            .header__menu
+                ul.header__nav
+                    each navItem in ['Destination', 'Activities', 'Specials']
+                        li.header__navItem
+                            a.header__navLink=navItem
+                    li.header__navItem
+                        a.header__navLink
+                            img(src="img/search.svg")
+                .header__acc
+                    button.header__login Login
+                    button.header__sign-up Sign Up

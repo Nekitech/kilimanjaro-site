@@ -1,0 +1,25 @@
+extends ../layout/layout
+block page
+    include ../chunk/header/header
+    section.startScreen
+        .container
+            .startScreen__block-img
+                .startScreen__img-content
+                    .startScreen__slider
+                        .startScreen__track
+                            each item in ['bgBanner.webp', 'mount-kilimanjaro.webp']
+                                img.startScreen__item(src=`img/${item}`)
+                    .startScreen__slider-nav
+                        button.startScreen__slider-nav__btn-prev.startScreen__slider-btn
+                            img(src='img/arrowPrev.svg')
+                        button.startScreen__slider-nav__btn-next.startScreen__slider-btn
+                            img(src='img/arrowNext.svg')
+                    p.startScreen__img-content__text
+                        | The Mountain Ranges <br>
+                        | Kilimanjaro
+
+                .startScreen__panel
+                    .startScreen__panel__item
+                        .startScreen__panel__item-text
+                        .startScreen__panel__icon
+    include ../chunk/footer/footer

@@ -1,0 +1,75 @@
+@import '../styles/global';
+
+@import '../chunk/header/header';
+@import '../chunk/footer/footer';
+
+.startScreen {
+  .startScreen__block-img{
+
+  }
+  .startScreen__img-content {
+    position: relative;
+  }
+  .startScreen__slider{
+    width: $widthContainer;
+    overflow-x: scroll;
+
+  }
+  .startScreen__track {
+    display: flex;
+    position: relative;
+    transition: 0.8s all;
+  }
+  .startScreen__item {
+    min-width: 1600px;
+    height: 646px;
+    border-radius: 32px;
+  }
+  .startScreen__img-content__text {
+      position: absolute;
+      font-size: 40px;
+      color: $white;
+      top: 152px;
+      left: 136px;
+      width: 1380px;
+    }
+  .startScreen__panel {
+
+    }
+  .startScreen__panel__item {
+
+    }
+  .startScreen__panel__item-text{
+
+    }
+  .startScreen__panel__icon{
+
+  }
+  .startScreen__slider-nav {
+    position: absolute;
+    bottom: 146px;
+    left: 134px;
+    display: flex;
+    width: 104px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .startScreen__slider-btn {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+
+  }
+  .startScreen__slider-btn:hover {
+    background-color: #fff;
+  }
+  .startScreen__slider-btn:hover img svg {
+    stroke: red !important;
+  }
+  .startScreen__slider-nav__btn-prev {
+
+  }
+}

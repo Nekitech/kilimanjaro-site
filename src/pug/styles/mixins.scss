@@ -1,0 +1,6 @@
+@mixin textStyles($f-s, $f-w, $l-h, $c){
+  font-size: $f-s;
+  font-weight: $f-w;
+  line-height: $l-h;
+  color: $c;
+}

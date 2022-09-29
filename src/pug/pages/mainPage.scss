@@ -7,36 +7,36 @@
 
 .startScreen {
   $height-panel: 174px;
-  .startScreen__block-img{
+  &__block-img{
     position: relative;
   }
-  .startScreen__img-content {
+  &__img-content {
     position: relative;
   }
-  .startScreen__slider{
+  &__slider{
     width: inherit;
     overflow: hidden;
 
   }
-  .startScreen__track {
+  &__track {
     display: flex;
     position: relative;
     transition: 0.8s all;
   }
-  .startScreen__slider-item {
+  &__slider-item {
     width: 100%;
     object-fit: cover;
     height: 646px;
     border-radius: 32px;
   }
-  .startScreen__img-content__text {
+  &__img-content__text {
       position: absolute;
       color: $white;
       top: 152px;
       left: 136px;
       width: 1380px;
     }
-  .startScreen__panel {
+  &__panel {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -52,7 +52,7 @@
     box-shadow: 0 43px 66px rgba(0, 0, 0, 0.07);
 
     }
-  .startScreen__panel__search {
+  &__panel__search {
     background: #28B0A6;
     border-radius: 16px;
     width: 112px;
@@ -64,7 +64,10 @@
     border: none;
     cursor: pointer;
   }
-  .startScreen__panel__search:after {
+  &__panel__search:hover {
+    background: #61afa9;
+  }
+  &__panel__search:after {
     content: 'Check Availability';
     bottom: -24px;
     min-width: 200%;
@@ -73,7 +76,7 @@
     transform: translateX(-50%);
     position: absolute;
   }
-  .startScreen__panel__title {
+  &__panel__title {
     font-weight: 600;
     font-size: 28px;
     line-height: 42px;
@@ -83,13 +86,13 @@
     color: $oxford;
     text-decoration: underline #d2a766;
   }
-  .startScreen__panel__item {
+  &__panel__item {
     display: flex;
     flex-direction: column;
     position: relative;
 
     }
-  .startScreen__panel__item-text{
+  &__panel__item-text{
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
@@ -98,12 +101,12 @@
     position: relative;
     }
 
-  .startScreen__panel__icon{
+  &__panel__icon{
     position: absolute;
     right: -56px;
     bottom: 0;
   }
-  .startScreen__slider-nav {
+  &__slider-nav {
     position: absolute;
     bottom: 146px;
     left: 134px;
@@ -112,7 +115,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  .startScreen__slider-btn {
+  &__slider-btn {
     width: 48px;
     height: 48px;
     background-color: transparent;
@@ -121,30 +124,30 @@
     cursor: pointer;
 
   }
-  .startScreen__slider-btn:hover {
+  &__slider-btn:hover {
     background-color: #fff;
   }
-  .startScreen__slider-btn:hover svg path{
+  &__slider-btn:hover svg path{
     fill: #000;
   }
-  .startScreen__slider-nav__btn-prev {
+  &__slider-nav__btn-prev {
 
   }
-  .startScreen__title {
+  &__title {
     @include textStyles(24px, 400, 36px, #fff);
     position: relative;
     padding-left: 40px;
   }
-  .startScreen__title:before {
+  &__title:before {
     content: url("../img/lineHeaderTitle.svg");
     left: 0;
     top: -12px;
     position: absolute;
   }
-  .startScreen__name {
+  &__name {
     @include textStyles(128px, 700, 192px, #fff);
   }
-  .startScreen__temp {
+  &__temp {
 
   }
 }
@@ -172,7 +175,7 @@
 // Cards about tours
 
 .tours {
-  margin-top: 105px;
+  margin: 105px 0;
 
   &__cards {
     display: flex;

@@ -49,13 +49,13 @@ a {
   padding: 36px 0;
 }
 
-.header .header__logo {
+.header__logo {
   -ms-flex-preferred-size: 10%;
   flex-basis: 10%;
   margin-right: 30px;
 }
 
-.header .header__menu {
+.header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +69,7 @@ a {
   flex-basis: 90%;
 }
 
-.header .header__nav {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,14 +81,14 @@ a {
   justify-content: flex-start;
 }
 
-.header .header__navItem {
+.header__navItem {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-right: 48px;
 }
 
-.header .header__navLink {
+.header__navLink {
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -96,7 +96,7 @@ a {
   cursor: pointer;
 }
 
-.header .header__wrapper {
+.header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,7 +108,7 @@ a {
   justify-content: space-between;
 }
 
-.header .header__acc {
+.header__acc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,7 +118,7 @@ a {
   justify-self: flex-end;
 }
 
-.header .header__login {
+.header__login {
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
@@ -129,7 +129,7 @@ a {
   cursor: pointer;
 }
 
-.header .header__sign-up {
+.header__sign-up {
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
@@ -142,6 +142,10 @@ a {
   cursor: pointer;
 }
 
+.header__sign-up:hover {
+  background: #61afa9;
+}
+
 .burger {
   display: none;
   width: 40px;
@@ -150,14 +154,14 @@ a {
   cursor: pointer;
 }
 
-.burger .burger__line {
+.burger__line {
   position: absolute;
   width: 100%;
   height: 4px;
   background-color: black;
 }
 
-.burger .burger__line:nth-of-type(1) {
+.burger__line:nth-of-type(1) {
   top: 0;
   left: 0;
   -webkit-transition: 0.2s all;
@@ -165,7 +169,7 @@ a {
   transition: 0.2s all;
 }
 
-.burger .burger__line:nth-of-type(2) {
+.burger__line:nth-of-type(2) {
   top: calc(calc((32px - 4px*4) / 3) + 4px);
   left: 0;
   -webkit-transition: 0.1s all;
@@ -173,7 +177,7 @@ a {
   transition: 0.1s all;
 }
 
-.burger .burger__line:nth-of-type(3) {
+.burger__line:nth-of-type(3) {
   top: calc(calc((32px - 4px*4) / 3)*2 + 4px*2);
   left: 0;
   -webkit-transition: 0.1s all;
@@ -181,7 +185,7 @@ a {
   transition: 0.1s all;
 }
 
-.burger .burger__line:nth-of-type(4) {
+.burger__line:nth-of-type(4) {
   bottom: 0;
   left: 0;
   -webkit-transition: 0.2s all;
@@ -256,6 +260,12 @@ a {
   bottom: 14px;
 }
 
+.footer {
+  width: 100%;
+  height: 120px;
+  background-color: #28B0A6;
+}
+
 .card-tour {
   width: 512px;
   height: 614px;
@@ -270,6 +280,7 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 16px 16px 0 16px;
 }
 
 .card-tour__content {
@@ -283,6 +294,9 @@ a {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   height: 100%;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .card-tour__content--title {
@@ -318,20 +332,20 @@ a {
   left: -20px;
 }
 
-.startScreen .startScreen__block-img {
+.startScreen__block-img {
   position: relative;
 }
 
-.startScreen .startScreen__img-content {
+.startScreen__img-content {
   position: relative;
 }
 
-.startScreen .startScreen__slider {
+.startScreen__slider {
   width: inherit;
   overflow: hidden;
 }
 
-.startScreen .startScreen__track {
+.startScreen__track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +355,7 @@ a {
   transition: 0.8s all;
 }
 
-.startScreen .startScreen__slider-item {
+.startScreen__slider-item {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -349,7 +363,7 @@ a {
   border-radius: 32px;
 }
 
-.startScreen .startScreen__img-content__text {
+.startScreen__img-content__text {
   position: absolute;
   color: #fff;
   top: 152px;
@@ -357,7 +371,7 @@ a {
   width: 1380px;
 }
 
-.startScreen .startScreen__panel {
+.startScreen__panel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,7 +396,7 @@ a {
   box-shadow: 0 43px 66px rgba(0, 0, 0, 0.07);
 }
 
-.startScreen .startScreen__panel__search {
+.startScreen__panel__search {
   background: #28B0A6;
   border-radius: 16px;
   width: 112px;
@@ -401,7 +415,11 @@ a {
   cursor: pointer;
 }
 
-.startScreen .startScreen__panel__search:after {
+.startScreen__panel__search:hover {
+  background: #61afa9;
+}
+
+.startScreen__panel__search:after {
   content: "Check Availability";
   bottom: -24px;
   min-width: 200%;
@@ -413,7 +431,7 @@ a {
   position: absolute;
 }
 
-.startScreen .startScreen__panel__title {
+.startScreen__panel__title {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -424,7 +442,7 @@ a {
   text-decoration: underline #d2a766;
 }
 
-.startScreen .startScreen__panel__item {
+.startScreen__panel__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,7 +453,7 @@ a {
   position: relative;
 }
 
-.startScreen .startScreen__panel__item-text {
+.startScreen__panel__item-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
@@ -445,13 +463,13 @@ a {
   position: relative;
 }
 
-.startScreen .startScreen__panel__icon {
+.startScreen__panel__icon {
   position: absolute;
   right: -56px;
   bottom: 0;
 }
 
-.startScreen .startScreen__slider-nav {
+.startScreen__slider-nav {
   position: absolute;
   bottom: 146px;
   left: 134px;
@@ -467,7 +485,7 @@ a {
   justify-content: space-between;
 }
 
-.startScreen .startScreen__slider-btn {
+.startScreen__slider-btn {
   width: 48px;
   height: 48px;
   background-color: transparent;
@@ -476,15 +494,15 @@ a {
   cursor: pointer;
 }
 
-.startScreen .startScreen__slider-btn:hover {
+.startScreen__slider-btn:hover {
   background-color: #fff;
 }
 
-.startScreen .startScreen__slider-btn:hover svg path {
+.startScreen__slider-btn:hover svg path {
   fill: #000;
 }
 
-.startScreen .startScreen__title {
+.startScreen__title {
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -493,14 +511,14 @@ a {
   padding-left: 40px;
 }
 
-.startScreen .startScreen__title:before {
+.startScreen__title:before {
   content: url("../img/lineHeaderTitle.svg");
   left: 0;
   top: -12px;
   position: absolute;
 }
 
-.startScreen .startScreen__name {
+.startScreen__name {
   font-size: 128px;
   font-weight: 700;
   line-height: 192px;
@@ -536,7 +554,7 @@ a {
 }
 
 .tours {
-  margin-top: 105px;
+  margin: 105px 0;
 }
 
 .tours__cards {

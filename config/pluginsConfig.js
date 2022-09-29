@@ -1,6 +1,6 @@
 const isProd = process.argv.includes('--production')
 const isDev = !isProd
-console.log(isProd, isDev)
+
 module.exports = {
     isProd: isProd,
     isDev: isDev,

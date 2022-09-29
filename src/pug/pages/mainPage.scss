@@ -3,6 +3,8 @@
 @import '../chunk/header/header';
 @import '../chunk/footer/footer';
 
+@import '../components/cardTour/cardTour';
+
 .startScreen {
   $height-panel: 174px;
   .startScreen__block-img{
@@ -164,4 +166,18 @@
     margin-top: 40px;
   }
 
+}
+
+
+// Cards about tours
+
+.tours {
+  margin-top: 105px;
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 110px 32px;
+  }
 }

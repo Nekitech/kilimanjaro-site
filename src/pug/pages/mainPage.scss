@@ -4,15 +4,16 @@
 @import '../chunk/footer/footer';
 
 .startScreen {
+  $height-panel: 174px;
   .startScreen__block-img{
-
+    position: relative;
   }
   .startScreen__img-content {
     position: relative;
   }
   .startScreen__slider{
-    width: $widthContainer;
-    overflow-x: scroll;
+    width: inherit;
+    overflow: hidden;
 
   }
   .startScreen__track {
@@ -20,30 +21,85 @@
     position: relative;
     transition: 0.8s all;
   }
-  .startScreen__item {
-    min-width: 1600px;
+  .startScreen__slider-item {
+    width: 100%;
+    object-fit: cover;
     height: 646px;
     border-radius: 32px;
   }
   .startScreen__img-content__text {
       position: absolute;
-      font-size: 40px;
       color: $white;
       top: 152px;
       left: 136px;
       width: 1380px;
     }
   .startScreen__panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1328px;
+    width: 100%;
+    height: $height-panel;
+    background-color: #fff;
+    position: absolute;
+    bottom: calc(#{-$height-panel}/2);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 16px;
+    box-shadow: 0 43px 66px rgba(0, 0, 0, 0.07);
 
     }
+  .startScreen__panel__search {
+    background: #28B0A6;
+    border-radius: 16px;
+    width: 112px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none;
+    cursor: pointer;
+  }
+  .startScreen__panel__search:after {
+    content: 'Check Availability';
+    bottom: -24px;
+    min-width: 200%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+  .startScreen__panel__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+
+    color: $oxford;
+    text-decoration: underline #d2a766;
+  }
   .startScreen__panel__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
     }
   .startScreen__panel__item-text{
-
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #99A3AD;
+    position: relative;
     }
-  .startScreen__panel__icon{
 
+  .startScreen__panel__icon{
+    position: absolute;
+    right: -56px;
+    bottom: 0;
   }
   .startScreen__slider-nav {
     position: absolute;
@@ -66,10 +122,46 @@
   .startScreen__slider-btn:hover {
     background-color: #fff;
   }
-  .startScreen__slider-btn:hover img svg {
-    stroke: red !important;
+  .startScreen__slider-btn:hover svg path{
+    fill: #000;
   }
   .startScreen__slider-nav__btn-prev {
 
   }
+  .startScreen__title {
+    @include textStyles(24px, 400, 36px, #fff);
+    position: relative;
+    padding-left: 40px;
+  }
+  .startScreen__title:before {
+    content: url("../img/lineHeaderTitle.svg");
+    left: 0;
+    top: -12px;
+    position: absolute;
+  }
+  .startScreen__name {
+    @include textStyles(128px, 700, 192px, #fff);
+  }
+  .startScreen__temp {
+
+  }
+}
+
+// Section info
+
+.info {
+  margin-top: 238px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include textStyles(64px, 600, 55px, #1D293F);
+    padding-left: 60px;
+    border-left: 7px solid #000;
+  }
+  &__text {
+    @include textStyles(24px, 400, 34px, #546179);
+    margin-top: 40px;
+  }
+
 }

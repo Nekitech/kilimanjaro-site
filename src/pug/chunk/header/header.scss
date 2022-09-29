@@ -103,6 +103,8 @@
   align-items: center;
   transform: translateX(0) !important;
   padding: 20px;
+  z-index: 2;
+  background-color: #fff;
 }
 .active ~ .header__menu .header__nav {
   flex-direction: column;
@@ -147,7 +149,7 @@
   .header .header__menu {
     display: none;
     width: 100vw;
-    height: 85vh;
+    height: 84vh;
     transform: translateX(-100%);
   }
   .burger {

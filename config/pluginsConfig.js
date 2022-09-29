@@ -1,6 +1,6 @@
 const isProd = process.argv.includes('--production')
 const isDev = !isProd
-
+console.log(isProd, isDev)
 module.exports = {
     isProd: isProd,
     isDev: isDev,
@@ -14,7 +14,7 @@ module.exports = {
         suffix: '.min'
     },
     pugConf: {
-        pretty: isDev, // сжимать - false, не сжимать - true
+        pretty: isDev, // убрать пробелы - false, не убирать пробелы - true
         data: {} // параметр data - для передачи данных во все файлы pug, например, объект с данными
     },
     fonterConf: {

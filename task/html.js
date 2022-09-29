@@ -16,7 +16,7 @@ const html = () => {
         .pipe(fileInclude())
         .pipe(webpHtml())
         .pipe(size({title: 'До сжатия'}))
-        .pipe(htmlmin(pluginsConfig.htmlWhitespace))
+        // .pipe(htmlmin(pluginsConfig.htmlWhitespace))
         .pipe(size({title: 'После сжатия'}))
         .pipe(dest(path.html.dest))
 

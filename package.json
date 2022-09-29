@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp",
-    "build": "gulp --production"
+    "build": "gulp --production",
+    "deploy": "gh-pages -d public"
   },
   "browserslist": [
     "last 3 versions"
@@ -26,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/Nekitech/hexagon-site/issues"
   },
-  "homepage": "https://github.com/Nekitech/hexagon-site#readme",
+  "homepage": "https://nekitech.github.io/kilimanjaro-site/",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
@@ -57,5 +58,8 @@
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
     "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

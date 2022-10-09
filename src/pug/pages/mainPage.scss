@@ -222,20 +222,63 @@
   &__sliderGuide {
 
   }
+
   &__sliderWrapper.wrapperSlider {
-    width: $widthContainer;
+    width: calc($widthContainer + 200px) !important;
   }
   &__sliderElem.elementSlider {
     width: 1296px;
     height: 670px;
     display: flex;
     justify-content: space-between;
-
+    flex-direction: row-reverse;
+    position: relative;
   }
   &__navBtn--prev {
+    cursor: pointer;
 
   }
+  &__contentSlider {
+    color: #000;
+    margin-left: 32px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__nameSlider {
+    @include textStyles(24px, 400, 36px, #28B0A6);
+  }
+  &__titleSlider {
+    @include textStyles(40px, 500, 60px, #1D293F);
+    margin-top: 16px;
+  }
+  &__textSlider {
+    @include textStyles(24px, 400, 36px, #546179);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 96px;
+  }
+  &__title {
+    @include textStyles(40px, 700, 60px, #1D293F);
+    margin-bottom: 40px;
+  }
+  &__text {
+    @include textStyles(24px, 400, 36px, #546179);
+    margin-bottom: 40px;
+
+  }
+  &__textSlider__block {
+    width: 342px;
+  }
+  &__textSlider__titleBlock {
+    @include textStyles(24px, 400, 36px, #000);
+  }
+  &__textSlider__textBlock {
+    @include textStyles(16px, 400, 24px, #99A3AD);
+  }
   &__navBtn--next {
+    cursor: pointer;
     transform: rotate(180deg);
   }
   &__navBtnElem img {
@@ -248,7 +291,37 @@
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    top: 0;
+    top: -176px;
     right: 0;
+  }
+  &__counter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    background-color: #fff;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    color: #000;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__textSlider__linkSocial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 306px;
+    margin-top: 172px;
+  }
+  &__textSlider__link {
+
+    @include textStyles(18px, 400, 27px, #000);
+    background-color: #fff;
+    cursor: pointer;
   }
 }

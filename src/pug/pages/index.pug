@@ -118,19 +118,111 @@ block page
                 +cardDest('/img/dest6.png', 'Arusha', '4.5')
     section.guide
         .container
+            h1.guide__title
+                | Tour Guides
+            p.guide__text
+                | Sost Brilliant reasons Entrada should be your one-stop-shop!
             .slider.guide__sliderGuide
                 .wrapperSlider.guide__sliderWrapper
                     .trackSlider
                         .elementSlider.guide__sliderElem
+                            .guide__contentSlider
+                                h3.guide__nameSlider
+                                    | Adventure Guru
+                                h1.guide__titleSlider
+                                    | Martina
+                                    br
+                                    | James Junior
+                                .guide__textSlider
+                                    .guide__textSlider__block
+                                        h4.guide__textSlider__titleBlock
+                                            | About
+                                        p.guide__textSlider__textBlock
+                                            | Check Out Daily Deals and Promotion on
+                                            | hotels. Easy & Fast Booking.
+                                    .guide__textSlider__block
+                                        h4.guide__textSlider__titleBlock
+                                            | Journey
+                                        p.guide__textSlider__textBlock
+                                            | Check Out Daily Deals and Promotion on
+                                            | hotels. Easy & Fast Booking.
+                                .guide__textSlider__linkSocial
+                                    .guide__textSlider__link
+                                        a
+                                            | Facebook
+                                    .guide__textSlider__link
+                                        a
+                                            | Instagram
+                                    .guide__textSlider__link
+                                        a
+                                            | Twitter
+                            .guide__counter
+                                p
+                                    | 01
                             img(src="img/sliderPhoto1.png", alt="guide")
                         .elementSlider.guide__sliderElem
+                            .guide__contentSlider
+                                h3.guide__nameSlider
+                                    | Adventure Guru
+                                h1.guide__titleSlider
+                                    | Our Guides
+                                .guide__textSlider
+                                    .guide__textSlider__block
+                                        h4.guide__textSlider__titleBlock
+                                            | About
+                                        p.guide__textSlider__textBlock
+                                            | Check Out Daily Deals and Promotion on
+                                            | hotels. Easy & Fast Booking.
+                                    .guide__textSlider__block
+                                        h4.guide__textSlider__titleBlock
+                                            | Journey
+                                        p.guide__textSlider__textBlock
+                                            | Check Out Daily Deals and Promotion on
+                                            | hotels. Easy & Fast Booking.
+                                .guide__textSlider__linkSocial
+                                    .guide__textSlider__link
+                                        a
+                                            | Facebook
+                                    .guide__textSlider__link
+                                        a
+                                            | Instagram
+                                    .guide__textSlider__link
+                                        a
+                                            | Twitter
+                            .guide__counter
+                                p
+                                    | 02
                             img(src="img/sliderPhoto2.png", alt="guide")
-                        .elementSlider.guide__sliderElem
-                        .elementSlider.guide__sliderElem
+
+
                 .navigationSlider.guide__navigationSlider
                     .prevBtn.guide__navBtnElem
-                        img.guide__navBtn--prev(src="/img/arrowSliderBtn.svg", alt="arrowLeft")
+                        <svg class="arrowBtnPrev guide__navBtn--prev" width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_f_555_2662)">
+                        <circle cx="37" cy="37" r="35.5" stroke="#546179"/>
+                        </g>
+                        <path d="M41.461 45.34L32.998 36.877L41.461 28.415" stroke="#546179" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                        <filter id="filter0_f_555_2662" x="0" y="0" width="74" height="74" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_555_2662"/>
+                        </filter>
+                        </defs>
+                        </svg>
                     .nextBtn.guide__navBtnElem
-                        img.guide__navBtn--next(src="/img/arrowSliderBtn.svg", alt="arrowRight")
+                        <svg class="arrowBtnNext guide__navBtn--next" width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_f_555_2662)">
+                        <circle cx="37" cy="37" r="35.5" stroke="#546179"/>
+                        </g>
+                        <path d="M41.461 45.34L32.998 36.877L41.461 28.415" stroke="#546179" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                        <filter id="filter0_f_555_2662" x="0" y="0" width="74" height="74" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_555_2662"/>
+                        </filter>
+                        </defs>
+                        </svg>
 
     include ../chunk/footer/footer

@@ -1,0 +1,26 @@
+@media (max-width: 1100px) {
+  .destinations__cards {
+    height: 1700px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-areas:   "card1 card3"
+                           "card2 card3"
+                           "card4 card4"
+                           "card5 card6";
+  }
+
+}
+
+@media (max-width: 764px) {
+  .destinations__cards {
+    height: 2400px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-areas:   "card1 card1"
+                           "card2 card2"
+                           "card3 card3"
+                           "card4 card4"
+                           "card5 card6";
+  }
+
+}

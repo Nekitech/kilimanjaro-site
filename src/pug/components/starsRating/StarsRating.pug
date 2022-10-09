@@ -1,0 +1,5 @@
+mixin starsRating(rating)
+  .card-tour__stars
+    while rating > 0
+        img(src="img/star.svg" alt="star").card-tour__stars--icon
+        - rating -= 1

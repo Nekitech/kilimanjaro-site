@@ -1,0 +1,20 @@
+include ../starsRating/StarsRating
+
+mixin cardTour(tour, numStars)
+  .card-tour
+    .card-tour__img
+      img(src=tour.img alt=tour.name)
+    .card-tour__content
+      .card-tour__content--title
+        h3 #{tour.name}
+        img(src="img/heart.svg" alt="heart").card-tour__content--title__icon
+        img(src="img/heartRed.svg" alt="heart").card-tour__content--title__iconRed
+
+      .card-tour__content--text
+        p #{tour.text}
+      .card-tour__content--price
+        p #{tour.price}
+        +starsRating(numStars)
+
+      .card-tour__during
+        p #{tour.during}

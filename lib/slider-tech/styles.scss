@@ -1,0 +1,32 @@
+
+.slider {
+    position: relative;
+}
+
+.wrapperSlider {
+    width: 600px;
+    overflow: hidden;
+
+}
+.trackSlider {
+    width: 4000px;
+    display: flex;
+    transition: 0.5s ease-in-out;
+    gap: 10px;
+
+}
+.elementSlider {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+}
+.navigationSlider {
+    position: absolute;
+}
+.activeBtn {
+    fill: #28B0A6;
+}

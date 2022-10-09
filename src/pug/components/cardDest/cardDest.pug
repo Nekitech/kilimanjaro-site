@@ -1,10 +1,11 @@
 
-mixin cardDest(img, name, rate)
+mixin cardDest(img, name, subname, rate)
     .card-dest
         img(src=img alt=name).card-dest__img
         .card-dest__content
             .card-dest__content--title
                 h3 #{name}
-            .card-dest__content--rate
-                p #{rate}
-                img(src="img/star.svg" alt="star").card-dest__content--rate__icon
+                br
+                h4 #{subname}
+        .card-dest__content--rate
+            p #{rate}

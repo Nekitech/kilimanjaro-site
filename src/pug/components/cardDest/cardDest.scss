@@ -27,6 +27,30 @@
     bottom: 20px;
     left: 30px;
   }
+  &__content--rate {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 56px;
+    height: 32px;
+    background-color: #FEF2DE;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  &__content--title h3 {
+
+    @include textStyles(24px, 500, 20px, #fff);
+
+  }
+  &__content--title h4 {
+    @include textStyles(16px, 400, 24px, #fff);
+  }
+  &__content--rate p {
+    @include textStyles(18px, 500, 20px, #F5A623);
+  }
 }
 .card-dest:nth-of-type(1) {
   grid-area: card1;

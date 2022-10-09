@@ -457,6 +457,46 @@ a {
   left: 30px;
 }
 
+.card-dest__content--rate {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 56px;
+  height: 32px;
+  background-color: #FEF2DE;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.card-dest__content--title h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fff;
+}
+
+.card-dest__content--title h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+
+.card-dest__content--rate p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #F5A623;
+}
+
 .card-dest:nth-of-type(1) {
   grid-area: card1;
 }

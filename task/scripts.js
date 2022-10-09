@@ -9,15 +9,21 @@ const pluginsConfig = require("../config/pluginsConfig.js");
 const concat = require('gulp-concat')
 const uglify = require('gulp-uglify')
 const babel = require('gulp-babel')
+const webpack = require('webpack-stream')
 
 
 const Scripts = () => {
     return src(path.js.src, {sourcemaps: pluginsConfig.isDev})
+        .pipe(webpack({
+            mode: pluginsConfig.isDev ? 'development' : 'production',
+        }))
         .pipe(concat('main.js'))
         .pipe(babel())
         .pipe(dest(path.js.dest))
 
-        .pipe(uglify())
+        .pipe(webpack({
+            mode: pluginsConfig.isDev ? 'development' : 'production',
+        }))
         .pipe(concat('main.min.js'))
         .pipe(babel())
         .pipe(dest(path.js.dest, {sourcemaps: pluginsConfig.isDev}))

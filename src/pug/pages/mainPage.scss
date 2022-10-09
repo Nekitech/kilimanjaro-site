@@ -1,10 +1,14 @@
 @import '../styles/global';
 
+@import "lib/slider-tech/styles.scss";
+
 @import '../chunk/header/header';
 @import '../chunk/footer/footer';
 
 @import '../components/cardTour/cardTour';
 @import '../components/starsRating/StarsRating';
+@import '../components/cardDest/cardDest';
+@import '../styles/mediaQueries';
 
 .startScreen {
   $height-panel: 174px;
@@ -183,5 +187,68 @@
     flex-wrap: wrap;
     margin-top: 40px;
     gap: 110px 32px;
+  }
+}
+
+// Destinations
+
+.destinations {
+    margin-top: 105px;
+    &__title {
+        @include textStyles(40px, 700, 60px, #1D293F);
+
+    }
+    &__text {
+      @include textStyles(24px, 400, 36px, #546179);
+
+    }
+    &__cards {
+      height: 702px;
+      display: grid;
+      gap: 32px;
+      margin-top: 64px;
+      grid-template-columns: 20% 30% 25% 25%;
+      grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-areas: "card1 card3 card4 card4"
+                           "card2 card3 card5 card6";
+      }
+
+}
+
+// Guide
+
+.guide {
+  margin-top: 105px;
+  &__sliderGuide {
+
+  }
+  &__sliderWrapper.wrapperSlider {
+    width: $widthContainer;
+  }
+  &__sliderElem.elementSlider {
+    width: 1296px;
+    height: 670px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__navBtn--prev {
+
+  }
+  &__navBtn--next {
+    transform: rotate(180deg);
+  }
+  &__navBtnElem img {
+    cursor: pointer;
+    width: 72px;
+    height: 72px;
+  }
+  &__navigationSlider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

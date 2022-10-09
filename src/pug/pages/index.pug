@@ -102,5 +102,35 @@ block page
                     price: '$750',
                     during: '3 days'
                 }, 4)
+    section.destinations
+        .container
+            h1.destinations__title
+                | Top Destinations
+            p.destinations__text
+                | Sost Brilliant reasons Entrada should be your one-stop-shop!
+            .destinations__cards
+                include ../components/cardDest/cardDest
+                +cardDest('/img/dest1.png', 'Ngorongoro Crater', '4.5')
+                +cardDest('/img/dest2.png', 'Serengeti', '4.5')
+                +cardDest('/img/dest3.png', 'Tarangire', '4.5')
+                +cardDest('/img/dest4.png', 'Lake Manyara', '4.5')
+                +cardDest('/img/dest5.png', 'Lake Eyasi', '4.5')
+                +cardDest('/img/dest6.png', 'Arusha', '4.5')
+    section.guide
+        .container
+            .slider.guide__sliderGuide
+                .wrapperSlider.guide__sliderWrapper
+                    .trackSlider
+                        .elementSlider.guide__sliderElem
+                            img(src="img/sliderPhoto1.png", alt="guide")
+                        .elementSlider.guide__sliderElem
+                            img(src="img/sliderPhoto2.png", alt="guide")
+                        .elementSlider.guide__sliderElem
+                        .elementSlider.guide__sliderElem
+                .navigationSlider.guide__navigationSlider
+                    .prevBtn.guide__navBtnElem
+                        img.guide__navBtn--prev(src="/img/arrowSliderBtn.svg", alt="arrowLeft")
+                    .nextBtn.guide__navBtnElem
+                        img.guide__navBtn--next(src="/img/arrowSliderBtn.svg", alt="arrowRight")
 
     include ../chunk/footer/footer

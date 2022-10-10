@@ -12,35 +12,42 @@
 
 .startScreen {
   $height-panel: 174px;
-  &__block-img{
+
+  &__block-img {
     position: relative;
   }
+
   &__img-content {
     position: relative;
   }
-  &__slider{
+
+  &__slider {
     width: inherit;
     overflow: hidden;
 
   }
+
   &__track {
     display: flex;
     position: relative;
     transition: 0.8s all;
   }
+
   &__slider-item {
     width: 100%;
     object-fit: cover;
     height: 646px;
     border-radius: 32px;
   }
+
   &__img-content__text {
-      position: absolute;
-      color: $white;
-      top: 152px;
-      left: 136px;
-      width: 1380px;
-    }
+    position: absolute;
+    color: $white;
+    top: 152px;
+    left: 136px;
+    width: 1380px;
+  }
+
   &__panel {
     display: flex;
     align-items: center;
@@ -50,13 +57,14 @@
     height: $height-panel;
     background-color: #fff;
     position: absolute;
-    bottom: calc(#{-$height-panel}/2);
+    bottom: calc(#{-$height-panel} / 2);
     left: 50%;
     transform: translateX(-50%);
     border-radius: 16px;
     box-shadow: 0 43px 66px rgba(0, 0, 0, 0.07);
 
-    }
+  }
+
   &__panel__search {
     background: #28B0A6;
     border-radius: 16px;
@@ -69,9 +77,11 @@
     border: none;
     cursor: pointer;
   }
+
   &__panel__search:hover {
     background: #61afa9;
   }
+
   &__panel__search:after {
     content: 'Check Availability';
     bottom: -24px;
@@ -81,6 +91,7 @@
     transform: translateX(-50%);
     position: absolute;
   }
+
   &__panel__title {
     font-weight: 600;
     font-size: 28px;
@@ -91,26 +102,29 @@
     color: $oxford;
     text-decoration: underline #d2a766;
   }
+
   &__panel__item {
     display: flex;
     flex-direction: column;
     position: relative;
 
-    }
-  &__panel__item-text{
+  }
+
+  &__panel__item-text {
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
     text-decoration-line: underline;
     color: #99A3AD;
     position: relative;
-    }
+  }
 
-  &__panel__icon{
+  &__panel__icon {
     position: absolute;
     right: -56px;
     bottom: 0;
   }
+
   &__slider-nav {
     position: absolute;
     bottom: 146px;
@@ -120,6 +134,7 @@
     align-items: center;
     justify-content: space-between;
   }
+
   &__slider-btn {
     width: 48px;
     height: 48px;
@@ -129,29 +144,36 @@
     cursor: pointer;
 
   }
+
   &__slider-btn:hover {
     background-color: #fff;
   }
-  &__slider-btn:hover svg path{
+
+  &__slider-btn:hover svg path {
     fill: #000;
   }
+
   &__slider-nav__btn-prev {
 
   }
+
   &__title {
     @include textStyles(24px, 400, 36px, #fff);
     position: relative;
     padding-left: 40px;
   }
+
   &__title:before {
     content: url("../img/lineHeaderTitle.svg");
     left: 0;
     top: -12px;
     position: absolute;
   }
+
   &__name {
     @include textStyles(128px, 700, 192px, #fff);
   }
+
   &__temp {
 
   }
@@ -169,6 +191,7 @@
     padding-left: 60px;
     border-left: 7px solid #000;
   }
+
   &__text {
     @include textStyles(24px, 400, 34px, #546179);
     margin-top: 40px;
@@ -193,25 +216,28 @@
 // Destinations
 
 .destinations {
-    margin-top: 105px;
-    &__title {
-        @include textStyles(40px, 700, 60px, #1D293F);
+  margin-top: 105px;
 
-    }
-    &__text {
-      @include textStyles(24px, 400, 36px, #546179);
+  &__title {
+    @include textStyles(40px, 700, 60px, #1D293F);
 
-    }
-    &__cards {
-      height: 702px;
-      display: grid;
-      gap: 32px;
-      margin-top: 64px;
-      grid-template-columns: 20% 30% 25% 25%;
-      grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
-      grid-template-areas: "card1 card3 card4 card4"
+  }
+
+  &__text {
+    @include textStyles(24px, 400, 36px, #546179);
+
+  }
+
+  &__cards {
+    height: 702px;
+    display: grid;
+    gap: 32px;
+    margin-top: 64px;
+    grid-template-columns: 20% 30% 25% 25%;
+    grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-areas: "card1 card3 card4 card4"
                            "card2 card3 card5 card6";
-      }
+  }
 
 }
 
@@ -219,6 +245,7 @@
 
 .guide {
   margin-top: 105px;
+
   &__sliderGuide {
 
   }
@@ -226,6 +253,7 @@
   &__sliderWrapper.wrapperSlider {
     width: calc($widthContainer + 200px) !important;
   }
+
   &__sliderElem.elementSlider {
     width: 1296px;
     height: 670px;
@@ -234,10 +262,12 @@
     flex-direction: row-reverse;
     position: relative;
   }
+
   &__navBtn--prev {
     cursor: pointer;
 
   }
+
   &__contentSlider {
     color: #000;
     margin-left: 32px;
@@ -245,13 +275,16 @@
     display: flex;
     flex-direction: column;
   }
+
   &__nameSlider {
     @include textStyles(24px, 400, 36px, #28B0A6);
   }
+
   &__titleSlider {
     @include textStyles(40px, 500, 60px, #1D293F);
     margin-top: 16px;
   }
+
   &__textSlider {
     @include textStyles(24px, 400, 36px, #546179);
     display: flex;
@@ -259,33 +292,41 @@
     align-items: center;
     margin-top: 96px;
   }
+
   &__title {
     @include textStyles(40px, 700, 60px, #1D293F);
     margin-bottom: 40px;
   }
+
   &__text {
     @include textStyles(24px, 400, 36px, #546179);
     margin-bottom: 40px;
 
   }
+
   &__textSlider__block {
     width: 342px;
   }
+
   &__textSlider__titleBlock {
     @include textStyles(24px, 400, 36px, #000);
   }
+
   &__textSlider__textBlock {
     @include textStyles(16px, 400, 24px, #99A3AD);
   }
+
   &__navBtn--next {
     cursor: pointer;
     transform: rotate(180deg);
   }
+
   &__navBtnElem img {
     cursor: pointer;
     width: 72px;
     height: 72px;
   }
+
   &__navigationSlider {
     display: flex;
     align-items: center;
@@ -294,6 +335,7 @@
     top: -176px;
     right: 0;
   }
+
   &__counter {
     position: absolute;
     bottom: 0;
@@ -311,6 +353,7 @@
     justify-content: center;
     align-items: center;
   }
+
   &__textSlider__linkSocial {
     display: flex;
     justify-content: space-between;
@@ -318,10 +361,123 @@
     width: 306px;
     margin-top: 172px;
   }
+
   &__textSlider__link {
 
     @include textStyles(18px, 400, 27px, #000);
     background-color: #fff;
     cursor: pointer;
+  }
+}
+
+
+// Ad
+
+.ad {
+  margin-top: 105px;
+
+  &__title {
+    @include textStyles(40px, 700, 60px, #fff);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__text {
+    @include textStyles(24px, 400, 36px, #fff);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__block {
+    width: 100%;
+    height: 508px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+  }
+
+  &__btn {
+    width: 188px;
+    height: 80px;
+    background: #FFFFFF;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all;
+    cursor: pointer;
+    border: none;
+    @include textStyles(24px, 400, 36px, #28B0A6);
+  }
+
+  &__btn:hover {
+    background: #0d756d;
+    color: #fff;
+    transition: 0.2s all;
+  }
+}
+
+
+// Form
+
+.form {
+    margin-top: 105px;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__blockImgs {
+    width: 784px;
+    height: 600px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img1 img2"
+                         "img1 img3";
+  }
+  &__img {
+
+  }
+  &__fonImg {
+    position: absolute;
+    top: -18px;
+    left: -48px;
+    z-index: -1;
+  }
+
+  &__img--one {
+    grid-area: img1;
+  }
+
+  &__img--two {
+    grid-area: img2;
+
+  }
+
+  &__img--three {
+    grid-area: img3;
+
+
   }
 }

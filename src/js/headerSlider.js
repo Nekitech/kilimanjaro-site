@@ -1,3 +1,28 @@
+import SliderTech from "../../lib/slider-tech/sliderCreate";
+
+
+const sliderHeader = new SliderTech('.startScreen__slider', {
+    slidersView: 1,
+    speed: 0.6,
+    counter: false
+})
+sliderHeader.initSlider()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let WIDTH = 1600
 //
 // function changeWidthSlider() {

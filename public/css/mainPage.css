@@ -534,6 +534,10 @@ a {
   overflow: hidden;
 }
 
+.startScreen__wrapperSlider {
+  width: 1620px !important;
+}
+
 .startScreen__track {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -545,7 +549,7 @@ a {
 }
 
 .startScreen__slider-item {
-  width: 100%;
+  width: 1600px;
   -o-object-fit: cover;
   object-fit: cover;
   height: 646px;
@@ -898,6 +902,10 @@ a {
   transform: rotate(180deg);
 }
 
+.guide__navBtnElem {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .guide__navBtnElem img {
   cursor: pointer;
   width: 72px;
@@ -1062,10 +1070,32 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   position: relative;
+}
+
+.form__blockText__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  color: #1D293F;
+  margin-top: 8px;
+}
+
+.form__blockText__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #28B0A6;
+  margin-top: 42px;
+}
+
+.form__blockText__text {
+  width: 460px;
+  margin: 24px 0 72px 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #546179;
 }
 
 .form__blockImgs {
@@ -1095,6 +1125,54 @@ a {
 
 .form__img--three {
   grid-area: img3;
+}
+
+.form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0 32px 84px rgba(14, 86, 124, 0.16);
+  box-shadow: 0 32px 84px rgba(14, 86, 124, 0.16);
+}
+
+.form__input input {
+  width: 460px;
+  height: 88px;
+  background: #FFFFFF;
+  border: none;
+  padding-left: 32px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #99A3AD;
+}
+
+.form__input button {
+  width: 188px;
+  height: 88px;
+  background: #28B0A6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ffffff;
 }
 
 @supports (-webkit-appearance:none) {
@@ -1149,7 +1227,7 @@ a {
   .header .header__menu {
     display: none;
     width: 100vw;
-    height: 84vh;
+    height: 93%;
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
